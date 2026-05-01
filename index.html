@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mohd Shabboo Siddiqui - Mechanical Engineer skilled in CAD, FEA, and Industrial Processes.">
+    <title>Mohd Shabboo Siddiqui | Mechanical Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>MS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#documents" class="nav-link">Documents</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting animate-in">Hello, I'm</p>
+                <h1 class="hero-name animate-in">
+                    <span class="name-line">Mohd Shabboo</span>
+                    <span class="name-line accent">Siddiqui</span>
+                </h1>
+                <div class="hero-title-wrapper animate-in">
+                    <span class="hero-title-label">I am a</span>
+                    <span class="hero-title" id="typed-text"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-description animate-in">
+                    Mechanical Engineering undergraduate with hands-on experience in research, 
+                    standardization, and industrial processes. Passionate about engineering innovation.
+                </p>
+                <div class="hero-cta animate-in">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="resume.pdf" download="Shibbu_Sheikh_Resume.pdf" class="btn btn-resume">
+                        <i class="fas fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#documents" class="btn btn-outline">
+                        <span>View Documents</span>
+                        <i class="fas fa-file-alt"></i>
+                    </a>
+                </div>
+                <div class="hero-stats animate-in">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="7.90">0</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-in">
+                <div class="image-frame">
+                    <div class="image-glow"></div>
+                    <img id="profile-photo" src="photo.jpeg" alt="Mohd Shabboo Siddiqui" style="display:block;" />
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-cog"></i> SolidWorks
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-industry"></i> BIS Trained
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fas fa-train"></i> Railways
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Know More</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>B.Tech - Mechanical Engineering</h4>
+                                <p class="timeline-place">Bundelkhand Institute of Engineering & Technology</p>
+                                <p class="timeline-date">2022 – Present</p>
+                                <span class="timeline-badge">CGPA: 7.90</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Intermediate (12th)</h4>
+                                <p class="timeline-place">St. Mary's Inter College</p>
+                                <p class="timeline-date">2019 – 2021</p>
+                                <span class="timeline-badge">79.80%</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>High School (10th)</h4>
+                                <p class="timeline-place">Gurukul Shiksha Niketan</p>
+                                <p class="timeline-date">2017 – 2019</p>
+                                <span class="timeline-badge">90.83%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card glass-card">
+                    <div class="about-icon"><i class="fas fa-user-tie"></i></div>
+                    <h3>Professional Summary</h3>
+                    <p class="about-text">
+                        Mechanical Engineering undergraduate with hands-on experience in research, 
+                        standardization, and industrial processes. Skilled in CAD (SolidWorks), FEA analysis, 
+                        and technical documentation.
+                    </p>
+                    <p class="about-text">
+                        Proven ability to analyze complex systems, develop standardized solutions, and contribute 
+                        to engineering projects with a focus on safety, efficiency, and innovation.
+                    </p>
+                    <div class="about-languages">
+                        <h4><i class="fas fa-language"></i> Languages</h4>
+                        <div class="lang-tags">
+                            <span class="lang-tag">English <small>(Professional)</small></span>
+                            <span class="lang-tag">Hindi <small>(Native)</small></span>
+                            <span class="lang-tag">Urdu <small>(Professional)</small></span>
+                        </div>
+                    </div>
+                    <div class="about-interests">
+                        <h4><i class="fas fa-heart"></i> Interests</h4>
+                        <div class="lang-tags">
+                            <span class="lang-tag">Engineering Research</span>
+                            <span class="lang-tag">Technology Exploration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Work Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-cards">
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-icon bis-icon"><i class="fas fa-stamp"></i></div>
+                        <div class="exp-meta">
+                            <h3>Trainee Engineer</h3>
+                            <p class="exp-company">Bureau of Indian Standards (BIS)</p>
+                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> New Delhi</p>
+                        </div>
+                        <span class="exp-date">Jun 2025 – Aug 2025</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>Prepared a pre-draft Indian Standard for operator cabin ergonomics of earth-moving machinery, focusing on vibration limits, fatigue reduction, and safety glass specifications.</li>
+                        <li>Conducted pre-standardization research and benchmarked against international standards (ISO/EN).</li>
+                        <li>Gained experience in standard development procedures, compliance assessment, and product certification frameworks.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>ISO Standards</span><span>Ergonomics</span><span>Research</span><span>Compliance</span>
+                    </div>
+                </div>
+                <div class="exp-card glass-card">
+                    <div class="exp-header">
+                        <div class="exp-icon rail-icon"><i class="fas fa-train"></i></div>
+                        <div class="exp-meta">
+                            <h3>Trainee Engineer</h3>
+                            <p class="exp-company">North-Eastern Railways</p>
+                            <p class="exp-location"><i class="fas fa-map-marker-alt"></i> Gorakhpur</p>
+                        </div>
+                        <span class="exp-date">Jun 2024 – Jul 2024</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>Studied design and working principles of Centre Buffer Coupling (CBC) systems.</li>
+                        <li>Observed coupling mechanisms, mechanical linkages, and maintenance procedures in railway workshops.</li>
+                        <li>Analyzed the role of coupling systems in load transfer, train stability, and operational safety.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span>CBC Systems</span><span>Mechanical Linkages</span><span>Workshop</span><span>Safety</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <div class="project-number">01</div>
+                    <div class="project-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Heat Treatment of Steel</h3>
+                    <p>Conducted processes including annealing, normalizing, and quenching on steel samples to compare mechanical strength and hardness.</p>
+                    <div class="project-tags">
+                        <span>Annealing</span><span>Quenching</span><span>Hardness Testing</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-number">02</div>
+                    <div class="project-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Development of Dual Phase Steel</h3>
+                    <p>Produced ferrite-martensite microstructure through controlled heat treatment to achieve a balance of strength and ductility.</p>
+                    <div class="project-tags">
+                        <span>Microstructure</span><span>Ferrite-Martensite</span><span>Heat Treatment</span>
+                    </div>
+                </div>
+                <div class="project-card glass-card">
+                    <div class="project-number">03</div>
+                    <div class="project-icon"><i class="fas fa-solar-panel"></i></div>
+                    <h3>Dual-Axis Solar Tracker System</h3>
+                    <p>Innovative low-cost design for improving solar panel efficiency, supporting clean energy applications through automated dual-axis tracking.</p>
+                    <div class="project-tags">
+                        <span>Solar Energy</span><span>Fabrication</span><span>Clean Energy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-drafting-compass"></i> CAD & Simulation</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span class="skill-name">SolidWorks</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+                        <div class="skill-bar-item"><span class="skill-name">Basic FEA Analysis</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-industry"></i> Manufacturing</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span class="skill-name">Material Selection</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+                        <div class="skill-bar-item"><span class="skill-name">GD&T</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+                        <div class="skill-bar-item"><span class="skill-name">CNC Basics</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+                        <div class="skill-bar-item"><span class="skill-name">Sheet Metal & Die Ops</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="72"></div></div></div>
+                        <div class="skill-bar-item"><span class="skill-name">Engineering Simulations</span><div class="skill-bar"><div class="skill-fill" data-width="68"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category glass-card">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MS Office</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Analytical Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Documents & Certificates</h2>
+                <div class="section-line"></div>
+            </div>
+            <p class="documents-intro">Click on any document card below to view the certificate or marksheet.</p>
+            <div class="documents-grid">
+                <div class="doc-card glass-card" data-doc="marksheet" id="doc-marksheet">
+                    <div class="doc-icon"><i class="fas fa-scroll"></i></div>
+                    <h3>Marksheet</h3>
+                    <p>Academic marksheet / grade card</p>
+                    <div class="doc-status"><i class="fas fa-check-circle"></i> Available</div>
+                    <button class="doc-view-btn" onclick="viewDocument('marksheet')">
+                        <i class="fas fa-eye"></i> View Document
+                    </button>
+                </div>
+                <div class="doc-card glass-card" data-doc="bis" id="doc-bis">
+                    <div class="doc-icon"><i class="fas fa-certificate"></i></div>
+                    <h3>BIS Training Certificate</h3>
+                    <p>Bureau of Indian Standards internship certificate</p>
+                    <div class="doc-status"><i class="fas fa-check-circle"></i> Available</div>
+                    <button class="doc-view-btn" onclick="viewDocument('bis')">
+                        <i class="fas fa-eye"></i> View Document
+                    </button>
+                </div>
+                <div class="doc-card glass-card" data-doc="railways" id="doc-railways">
+                    <div class="doc-icon"><i class="fas fa-train"></i></div>
+                    <h3>Railways Training Certificate</h3>
+                    <p>North-Eastern Railways training certificate</p>
+                    <div class="doc-status"><i class="fas fa-check-circle"></i> Available</div>
+                    <button class="doc-view-btn" onclick="viewDocument('railways')">
+                        <i class="fas fa-eye"></i> View Document
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Reach Out</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Email</h3>
+                    <a href="mailto:shabbusheikh33@gmail.com">shabbusheikh33@gmail.com</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <h3>Phone</h3>
+                    <a href="tel:+917518290488">+91 7518290488</a>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Location</h3>
+                    <p>Maharajganj, India</p>
+                </div>
+                <div class="contact-card glass-card">
+                    <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/shibbu-sheikh-891255259/" target="_blank">Shibbu Sheikh</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Mohd Shabboo Siddiqui. All rights reserved.</p>
+    </footer>
+
+    <!-- Document Viewer Modal -->
+    <div class="modal-overlay" id="viewer-modal">
+        <div class="modal viewer-modal glass-card">
+            <button class="modal-close" onclick="closeViewerModal()"><i class="fas fa-times"></i></button>
+            <h2 id="viewer-title">Document</h2>
+            <div class="viewer-content" id="viewer-content">
+                <!-- Document will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
